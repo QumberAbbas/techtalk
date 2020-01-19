@@ -1,6 +1,4 @@
 # Techtalk
-
-Post Article Medium
 ===========================================================
 
 Introduction
