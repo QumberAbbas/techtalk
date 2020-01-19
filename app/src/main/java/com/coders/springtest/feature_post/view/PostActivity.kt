@@ -58,6 +58,7 @@ class PostActivity :
      */
     override fun initViewModel(viewModel: PostViewModel) {
         binding.lifecycleOwner = this
+        binding.postAdapter = adapter
 
         viewModel.postLiveData
             .observe(this, Observer {
