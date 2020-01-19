@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SpringTest</string>
+    <string name="premium">Premium</string>
+    <string name="topic_name">#%s</string>
+    <string name="premium_user">Aren\'t you premium user?</string>
+    <string name="premium_user_note">Please subscribe for membership for viewing paid articles/videos.</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="cancel">Cancel</string>
+    <string name="todo">This feature is under development</string>
+</resources>

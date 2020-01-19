@@ -1,0 +1,89 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'jacoco'
+
+android {
+    def androidVersions = rootProject.ext.android
+
+    compileSdkVersion androidVersions.compileSdkVersion
+    buildToolsVersion androidVersions.buildToolsVersion
+    defaultConfig {
+        applicationId "com.coders.springtest"
+        minSdkVersion androidVersions.minSdkVersion
+        targetSdkVersion androidVersions.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            testCoverageEnabled true
+        }
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    dataBinding.enabled = true
+
+}
+
+dependencies {
+    def commonDependencies = rootProject.ext.commonDependencies
+    def commonTestDependencies = rootProject.ext.commonTestDependencies
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation commonDependencies.kotlin
+
+    implementation commonDependencies.androidxAppCompat
+    implementation commonDependencies.androidxCore
+
+    implementation commonDependencies.androidArchExt
+    implementation commonDependencies.androidArchCommon
+
+    implementation commonDependencies.constraintLayout
+    implementation commonDependencies.gson
+
+    implementation commonDependencies.rxJava2
+    implementation commonDependencies.rxAndroid
+
+    implementation commonDependencies.dagger
+    kapt commonDependencies.daggerApt
+    kapt commonDependencies.daggerAndProcessor
+    implementation commonDependencies.daggerAndSupport
+
+    implementation commonDependencies.androidReactiveStreams
+
+    implementation commonDependencies.room
+    kapt commonDependencies.roomCompiler
+
+    implementation commonDependencies.playPauseView
+
+    implementation commonDependencies.cardView
+    implementation commonDependencies.recyclerView
+    implementation commonDependencies.glide
+    implementation commonDependencies.cardView
+    implementation commonDependencies.flatDialog
+
+    testImplementation commonTestDependencies.junit
+    testImplementation commonTestDependencies.mockito
+    testImplementation commonTestDependencies.assertj
+    testImplementation commonTestDependencies.architectureComponentsTesting
+    androidTestImplementation commonTestDependencies.androidxTestExt
+    androidTestImplementation commonTestDependencies.androidxEspressoTest
+}

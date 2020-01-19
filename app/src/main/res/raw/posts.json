@@ -1,0 +1,61 @@
+[
+  {
+    "postId": "1",
+    "mediaUrl": "https://www.youtube.com/watch?v=kRhivT-jKzY",
+    "headline": "Why developers should learn kotlin",
+    "type": "VIDEO",
+    "sourceUrl": "https://medium.com/mindorks/learn-kotlin-kotlin-free-tutorial-7c35647991ee",
+    "isPaid": true,
+    "duration": "600"
+  },
+  {
+    "postId": "2",
+    "mediaUrl": "https://miro.medium.com/max/800/1*whiXKP1sVZ1VxTWh0kTBxg.png",
+    "headline": "Dagger in Kotlin",
+    "description": "Dagger is a popular Dependency Injection framework commonly used in Android. It provides fully static and compile-time dependencies addressing many of the development and performance issues that have reflection-based solutions.",
+    "sourceUrl": "https://medium.com/androiddevelopers/dagger-in-kotlin-gotchas-and-optimizations-7446d8dfd7dc",
+    "type": "ARTICLE",
+    "isPaid": false,
+    "topics": [
+      "Tech",
+      "Android",
+      "Dagger"
+    ]
+  },
+  {
+    "postId": "3",
+    "mediaUrl": "https://youtu.be/r8U5Rtcr5UU",
+    "headline": "Using Room Database",
+    "type": "VIDEO",
+    "sourceUrl": "https://medium.com/mindorks/using-room-database-android-jetpack-675a89a0e942",
+    "isPaid": false,
+    "duration": "128"
+  },
+  {
+    "postId": "4",
+    "mediaUrl": "https://2.bp.blogspot.com/-7-CWfmPz1g8/XH28n3abG7I/AAAAAAAAHSY/PhV66bw8SkgN1lUNRwn9gV84UmrkTDNNACLcBGAs/s1600/image2.png",
+    "headline": "WorkManager meets Kotlin",
+    "description": "WorkManager is an Android Jetpack library that makes it easy to schedule deferrable, asynchronous tasks that must be run reliably. It is the current best practice for most background work on Android.",
+    "sourceUrl": "https://medium.com/androiddevelopers/workmanager-meets-kotlin-b9ad02f7405e",
+    "type": "ARTICLE",
+    "isPaid": true,
+    "topics": [
+      "Android",
+      "Jetpack",
+      "WorkManager"
+    ]
+  },
+  {
+    "postId": "5",
+    "mediaUrl": "https://miro.medium.com/max/960/1*qS2HAgsw9grFfPS3L-Rx1g.png",
+    "headline": "Ready for Koin 2.0",
+    "description": "It’s now time! Koin 2.0 stable version is officially out. Six months of development, rewriting, API rethinking and users feedbacks analysis. And all of this with a real challenge: keep the simplicity of Koin!",
+    "sourceUrl": "https://medium.com/koin-developers/ready-for-koin-2-0-2722ab59cac3",
+    "type": "ARTICLE",
+    "isPaid": false,
+    "topics": [
+      "Kotlin",
+      "Koin"
+    ]
+  }
+]

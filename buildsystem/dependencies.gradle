@@ -1,0 +1,76 @@
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+}
+ext {
+
+    androidx_version = '1.1.0'
+    constraint_layout_version = '1.1.3'
+    rxjava_version = '2.2.4'
+    rxandroid_version = '2.0.1'
+    room_version = "1.1.1"
+    dagger2_version = '2.25.3'
+    gson_version = '2.8.1'
+    junit_version = '4.12'
+    mockito_version = '3.2.4'
+    databinding_version = "3.1.4"
+    lifecycle_version = "2.1.0"
+    espresso_version = '3.1.1'
+    card_view_version = '28.0.0'
+    recycler_view_version = '1.1.0'
+    glide_version = '4.9.0'
+    play_pause_version = '1.0.2'
+    flat_dailog_version = '1.0.4'
+    assertj_version = '3.14.0'
+
+    commonDependencies = [
+
+            androidxAppCompat     : "androidx.appcompat:appcompat:${androidx_version}",
+            androidxCore          : "androidx.core:core-ktx:${androidx_version}",
+
+            androidArchExt        : "android.arch.lifecycle:extensions:${lifecycle_version}",
+            androidArchCommon     : "android.arch.lifecycle:common-java8:${lifecycle_version}",
+            androidReactiveStreams: "androidx.lifecycle:lifecycle-reactivestreams:$lifecycle_version",
+
+            kotlin                : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${kotlin_version}",
+
+            constraintLayout      : "androidx.constraintlayout:constraintlayout:${constraint_layout_version}",
+
+            dagger                : "com.google.dagger:dagger-android:${dagger2_version}",
+            daggerApt             : "com.google.dagger:dagger-compiler:${dagger2_version}",
+            daggerAndProcessor    : "com.google.dagger:dagger-android-processor:${dagger2_version}",
+            daggerAndSupport      : "com.google.dagger:dagger-android-support:${dagger2_version}",
+
+            gson                  : "com.google.code.gson:gson:${gson_version}",
+
+            rxJava2               : "io.reactivex.rxjava2:rxjava:${rxjava_version}",
+            rxAndroid             : "io.reactivex.rxjava2:rxandroid:${rxandroid_version}",
+
+            room                  : "android.arch.persistence.room:rxjava2:${room_version}",
+            roomCompiler          : "android.arch.persistence.room:compiler:${room_version}",
+
+            cardView              : "com.android.support:cardview-v7:${card_view_version}",
+
+            recyclerView          : "androidx.recyclerview:recyclerview:${recycler_view_version}",
+
+            glide                 : "com.github.bumptech.glide:glide:${glide_version}",
+
+            playPauseView         : "com.github.ohoussein.playpauseview:playpauseview:${play_pause_version}",
+
+            flatDialog            : "com.github.mejdi14:Flat-Dialog-Android:${flat_dailog_version}"
+    ]
+
+    commonTestDependencies = [
+
+            junit               : "junit:junit:${junit_version}",
+            mockito             : "org.mockito:mockito-core:${mockito_version}",
+            assertj                      : "org.assertj:assertj-core:${assertj_version}",
+            androidxTestExt     : "androidx.test.ext:junit:${androidx_version}",
+            androidxEspressoTest: "androidx.test.espresso:espresso-core:${espresso_version}",
+            architectureComponentsTesting: "android.arch.core:core-testing:${lifecycle_version}",
+
+    ]
+}
